@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.systelligence.jetpackcomposecustomui.scaffoldexamples.SimpleScaffold
 import com.systelligence.jetpackcomposecustomui.ui.theme.JetPackComposeCustomUiTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,12 +20,13 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             JetPackComposeCustomUiTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                SimpleScaffold()
+                /*Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
                     )
-                }
+                }*/
             }
         }
     }
